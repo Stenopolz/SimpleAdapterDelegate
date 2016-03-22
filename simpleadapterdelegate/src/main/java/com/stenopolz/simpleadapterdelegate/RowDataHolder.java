@@ -20,7 +20,7 @@ import android.support.annotation.NonNull;
 
 /**
  * Created by Pavel Shchors on 16.03.2016.
- * <p/>
+ *
  * Data holder for objects to be displayed with the help of adapter delegates
  */
 public class RowDataHolder<T> {

@@ -22,7 +22,7 @@ import android.view.ViewGroup;
 
 /**
  * Created by Pavel Shchors on 16.03.2016.
- * <p/>
+ *
  * Adapter delegate
  */
 public abstract class BaseAdapterDelegate<ObjectType, ViewHolderType extends RecyclerView.ViewHolder> {

@@ -21,6 +21,35 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-annotations:23.2.1'
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:recyclerview-v7:23.2.1'
 }
+
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'simpleadapterdelegate'
+
+    publishedGroupId = 'com.stenopolz'
+    libraryName = 'SimpleAdapterDelegate'
+    artifact = 'simpleadapterdelegate'
+
+    libraryDescription = 'Simple implementation of adapter delegate pattern for recycler view adapter'
+
+    siteUrl = 'https://github.com/Stenopolz/SimpleAdapterDelegate'
+    gitUrl = 'https://github.com/Stenopolz/SimpleAdapterDelegate.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'stenopolz'
+    developerName = 'Pavel Shchors'
+    developerEmail = 'stenopolz@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'install.gradle'
+apply from: 'bintray.gradle'

@@ -26,7 +26,7 @@ import java.util.List;
 
 /**
  * Created by Pavel Shchors on 16.03.2016.
- * <p/>
+ *
  * Base adapter to use with adapter delegates
  */
 public abstract class BaseDelegateAdapter extends RecyclerView.Adapter {
